@@ -1,0 +1,54 @@
+/* 
+  phone  576px
+  tablet  768px
+   desktop 992px
+*/
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.one{
+    background-color: red;
+}
+.two{
+    background-color: blue;
+}
+.three{
+    background-color: green;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flextwo{
+    width: 50%;
+    background-color: brown;
+}
+
+.flexone{
+    width: 50%;
+    background-color: darkgoldenrod;
+}
+
+@media (min-width: 991px) {
+    .one{
+        background-color: yellow;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .flexone{
+        /* width: 100%; */
+        
+    }
+    .flextwo{
+        /* width: 100%; */
+    }
+}
